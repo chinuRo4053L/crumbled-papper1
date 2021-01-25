@@ -21,6 +21,7 @@ function setup() {
 GROUND=new Ground(width/2,670,width,20)
 BOX=new Box(1200,650)
 	PAPER=new paper(200,450,40)
+	
 	var render = Render.create({
 		element: document.body,
 		engine: engine,
