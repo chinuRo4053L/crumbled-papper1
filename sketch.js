@@ -20,8 +20,8 @@ function setup() {
 	//Create the Bodies Here.
 GROUND=new Ground(width/2,670,width,20)
 BOX=new Box(1200,650)
-	PAPER=new paper(200,450,40)
-	
+	PAPER=new paper(200,150,40)
+PAPER1=new paper1(200,130,4)
 	var render = Render.create({
 		element: document.body,
 		engine: engine,
@@ -44,6 +44,7 @@ function draw() {
  BOX.display()
  PAPER.display()
 GROUND.display()
+PAPPER1.display()
 
 
 
@@ -52,7 +53,7 @@ GROUND.display()
 
 }
 function keyPressed() {
-	if (keyCode === UP_ARROW) {
+	if (keyCode === mouse.x,mouse.y) {
 
 	  Matter.Body.applyForce(PAPER.body,PAPER.body.position,{x:85,y:-85});
   
